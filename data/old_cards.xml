@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<old-Cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="urn:com.khrushchev.postcard"
+         xsi:schemaLocation="urn:com.khrushchev.postcard urn:schema.xsd">
+
+    <advertising-card date-of-sell="2011-02-02">
+        <theme>Nature</theme>
+        <country>German</country>
+        <year>2019</year>
+        <author>Ward</author>
+        <valuable>thematic</valuable>
+        <targets-for-advertising-by-age>19-30</targets-for-advertising-by-age>
+        <targets-for-advertising-by-gender>all</targets-for-advertising-by-gender>
+    </advertising-card>
+
+    <congratulatory-card date-of-sell="2021-01-11">
+        <theme>City</theme>
+        <country>Belarus</country>
+        <year>2020</year>
+        <author>Aqq</author>
+        <valuable>historical</valuable>
+        <type-of-holiday>birthday</type-of-holiday>
+    </congratulatory-card>
+
+    <normal-card date-of-sell="2020-09-30">
+        <theme>Night</theme>
+        <country>Poland</country>
+        <year>2013</year>
+        <author>Johnson</author>
+        <valuable>collection</valuable>
+        <recipient>friends</recipient>
+    </normal-card>
+    
+    <congratulatory-card date-of-sell="2000-10-20">
+        <theme>Sport</theme>
+        <country>Russia</country>
+        <year>1999</year>
+        <author>Ivanov</author>
+        <valuable>thematic</valuable>
+        <type-of-holiday>professional</type-of-holiday>
+    </congratulatory-card>
+    
+    <advertising-card date-of-sell="2021-02-25">
+        <theme>Future</theme>
+        <country>USA</country>
+        <year>2021</year>
+        <author>Smith</author>
+        <valuable>collection</valuable>
+        <targets-for-advertising-by-age>all</targets-for-advertising-by-age>
+        <targets-for-advertising-by-gender>all</targets-for-advertising-by-gender>
+    </advertising-card>
+
+    <normal-card date-of-sell="1998-12-31">
+        <theme>Ney Year</theme>
+        <country>Belarus</country>
+        <year>1998</year>
+        <author>Petrov</author>
+        <valuable>thematic</valuable>
+        <recipient>family</recipient>
+    </normal-card>
+
+    <congratulatory-card date-of-sell="2005-05-05">
+        <theme>Summer</theme>
+        <country>German</country>
+        <year>2004</year>
+        <author>Hill</author>
+        <valuable>thematic</valuable>
+        <type-of-holiday>professional</type-of-holiday>
+    </congratulatory-card>
+    
+    <advertising-card date-of-sell="2006-06-06">
+        <theme>Spring</theme>
+        <country>Russia</country>
+        <year>2006</year>
+        <author>Chernov</author>
+        <valuable>collection</valuable>
+        <targets-for-advertising-by-age>65+</targets-for-advertising-by-age>
+        <targets-for-advertising-by-gender>man</targets-for-advertising-by-gender>
+    </advertising-card>
+
+    <normal-card date-of-sell="2007-07-07">
+        <theme>Fall</theme>
+        <country>German</country>
+        <year>2007</year>
+        <author>Ross</author>
+        <valuable>historical</valuable>
+        <recipient>colleague</recipient>
+    </normal-card>
+
+    <congratulatory-card date-of-sell="2008-08-08">
+        <theme>Winter</theme>
+        <country>USA</country>
+        <year>2008</year>
+        <author>Jackson</author>
+        <valuable>collection</valuable>
+        <type-of-holiday>religious</type-of-holiday>
+    </congratulatory-card>
+
+    <congratulatory-card date-of-sell="2009-09-09">
+        <theme>Zoo</theme>
+        <country>German</country>
+        <year>2009</year>
+        <author>Turner</author>
+        <valuable>historical</valuable>
+        <type-of-holiday>birthday</type-of-holiday>
+    </congratulatory-card>
+
+    <advertising-card date-of-sell="2010-10-10">
+        <theme>Business</theme>
+        <country>USA</country>
+        <year>2010</year>
+        <author>Howard</author>
+        <valuable>thematic</valuable>
+        <targets-for-advertising-by-age>19-30</targets-for-advertising-by-age>
+        <targets-for-advertising-by-gender>all</targets-for-advertising-by-gender>
+    </advertising-card>
+
+    <advertising-card  date-of-sell="2011-11-11">
+        <theme>Education</theme>
+        <country>German</country>
+        <year>2011</year>
+        <author>Griffin</author>
+        <valuable>collection</valuable>
+        <targets-for-advertising-by-age>15-18</targets-for-advertising-by-age>
+        <targets-for-advertising-by-gender>all</targets-for-advertising-by-gender>
+    </advertising-card>
+
+</old-Cards>

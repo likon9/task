@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="urn:com.khrushchev.postcard"
+        xmlns:tns="urn:com.khrushchev.postcard"
+        elementFormDefault="qualified">
+
+    <element name="old-Cards" type="tns:OldCards"/>
+    <element name="old-Card" type="tns:OldCard"/>
+    <element name="congratulatory-card" type="tns:CongratulatoryCard" substitutionGroup="tns:old-Card"/>
+    <element name="advertising-card" type="tns:AdvertisingCard" substitutionGroup="tns:old-Card"/>
+    <element name="normal-card" type="tns:NormalCard" substitutionGroup="tns:old-Card"/>
+
+    <complexType name="OldCards">
+            <sequence>
+                <element ref="tns:old-Card" minOccurs="2" maxOccurs="10000"/>
+            </sequence>
+    </complexType>
+
+    <complexType name="OldCard">
+        <sequence>
+            <element name="theme" type="tns:Theme"/>
+            <element name="country" type="tns:Country"/>
+            <element name="year" type="tns:Year"/>
+            <element name="author" type="tns:Author"/>
+            <element name="valuable" type="tns:Valuable"/>
+        </sequence>
+        <attribute name="date-of-sell" type="date" use="required"/>
+    </complexType>
+
+    <complexType name="CongratulatoryCard">
+        <complexContent>
+            <extension base="tns:OldCard">
+                <sequence>
+                    <element name="type-of-holiday" type="tns:TypeOfHoliday"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="AdvertisingCard">
+        <complexContent>
+            <extension base="tns:OldCard">
+                <sequence>
+                    <element name="targets-for-advertising-by-age" type="tns:TargetsForAdvertisingByAge"/>
+                    <element name="targets-for-advertising-by-gender" type="tns:TargetsForAdvertisingByGender"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="NormalCard">
+        <complexContent>
+            <extension base="tns:OldCard">
+                <sequence>
+                    <element name="recipient" type="tns:Recipient"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="Country">
+        <restriction base="string">
+            <enumeration value="Belarus"/>
+            <enumeration value="Poland"/>
+            <enumeration value="Russia"/>
+            <enumeration value="German"/>
+            <enumeration value="USA"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="Year">
+        <restriction base="int">
+            <minExclusive value="1990"/>
+            <maxExclusive value="2022"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="Author">
+        <restriction base="string">
+            <pattern value="[a-zA-Z ]{2,50}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Theme">
+        <restriction base="string">
+            <pattern value="[a-zA-Z1-9 ]{2,50}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Valuable">
+        <restriction base="string">
+            <enumeration value="historical"/>
+            <enumeration value="collection"/>
+            <enumeration value="thematic"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="TypeOfHoliday">
+        <restriction base="string">
+            <enumeration value="birthday"/>
+            <enumeration value="professional"/>
+            <enumeration value="public"/>
+            <enumeration value="religious"/>
+            <enumeration value="other"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="TargetsForAdvertisingByAge">
+        <restriction base="string">
+            <enumeration value="6-14"/>
+            <enumeration value="15-18"/>
+            <enumeration value="19-30"/>
+            <enumeration value="31-50"/>
+            <enumeration value="51-65"/>
+            <enumeration value="65+"/>
+            <enumeration value="all"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="TargetsForAdvertisingByGender">
+        <restriction base="string">
+            <enumeration value="man"/>
+            <enumeration value="woman"/>
+            <enumeration value="all"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Recipient">
+        <restriction base="string">
+            <enumeration value="family"/>
+            <enumeration value="friends"/>
+            <enumeration value="colleague"/>
+            <enumeration value="other"/>
+        </restriction>
+    </simpleType>
+</schema>

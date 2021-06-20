@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<old-Cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="urn:com.khrushchev.postcard"
+           xsi:schemaLocation="urn:com.khrushchev.postcard urn:schema.xsd">
+
+    <advertising-card date-of-sell="2011-02-02">
+        <theme>Nature</theme>
+        <country>German</country>
+        <year>2019</year>
+        <author>Ward</author>
+        <valuable>thematic</valuable>
+        <targets-for-advertising-by-age>19-30</targets-for-advertising-by-age>
+        <targets-for-advertising-by-gender>all</targets-for-advertising-by-gender>
+    </advertising-card>
+
+
+</old-Cards>
